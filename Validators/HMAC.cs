@@ -31,7 +31,7 @@ namespace WalletConnectValidator.Validators
 
             byte[] key = c_key.HexToByteArray();
 
-            var result = await Cipher.DecryptWithKey(key, encryptedPayload);
+            Console.Write(await Cipher.DecryptWithKey(key, encryptedPayload));
 
             return true;
         }
